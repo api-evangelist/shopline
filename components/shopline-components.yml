@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.shopline.com/docs/apps/overview
+docs:
+  - https://developer.shopline.com/docs/apps/overview
+  - https://developer.shopline.com/docs/apps/application-extension/create-admin-links
+summary: >-
+  Client-side / embedded surfaces SHOPLINE provides for apps to render inside the
+  merchant admin and storefront. Distinct from the server-side toolchain in
+  packages/.
+families:
+  - name: Atlas component library
+    kind: UI component library
+    purpose: Build app user interfaces that match the SHOPLINE admin design system
+    source: https://developer.shopline.com/docs/apps/overview
+  - name: App Bridge
+    kind: embedding framework
+    purpose: >-
+      Embed a Public app inside the SHOPLINE admin. Available to Public apps
+      only; Custom and Private apps cannot use App Bridge.
+    source: https://developer.shopline.com/docs/apps/application-management/application-distribution-methods
+  - name: App Extensions
+    kind: admin extension points
+    purpose: >-
+      Surface app functionality inside the merchant admin, including Admin Links.
+      Not available to Private apps.
+    source: https://developer.shopline.com/docs/apps/application-extension/create-admin-links

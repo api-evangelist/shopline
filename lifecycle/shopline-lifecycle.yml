@@ -1,0 +1,39 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.shopline.com/docs/apps/api-instructions-for-use/api-versioning-guide
+versioning:
+  scheme: date-based path segment (vYYYYMMDD)
+  cadence: iterated approximately every 3 months
+  current_stable: v20260601
+  docs: https://developer.shopline.com/docs/apps/api-instructions-for-use/api-versioning-guide
+  version_types:
+    - {type: Unstable, meaning: in-development, subject to change}
+    - {type: Release Candidate, meaning: pre-stable preview}
+    - {type: Stable, meaning: safe to call; supported 12 months once stable}
+    - {type: Deprecated, meaning: past support window; scheduled for removal}
+deprecation:
+  policy: Stable versions are supported for 12 months; consecutive stable versions overlap for 9 months
+  policy_url: https://developer.shopline.com/docs/apps/api-instructions-for-use/api-versioning-guide
+  change_notification: Change and deprecation notices are sent via the SHOPLINE Developer Center and developer contact email
+  sunset_header: null
+sla:
+  uptime_target: "99.99%"
+  source: https://developer.shopline.com
+status_page: null
+version_ladder:
+  - {version: v20261201, status: Unstable}
+  - {version: v20260901, status: Release Candidate}
+  - {version: v20260601, status: Stable}
+  - {version: v20260301, status: Stable}
+  - {version: v20251201, status: Stable}
+  - {version: v20250601, status: Stable}
+  - {version: v20250301, status: Stable}
+  - {version: v20241201, status: Deprecated}
+  - {version: v20240601, status: Deprecated}
+  - {version: v20240301, status: Deprecated}
+  - {version: v20231201, status: Deprecated}
+  - {version: v20230901, status: Deprecated}
+  - {version: v20230301, status: Deprecated}
+  - {version: v20220901, status: Deprecated}
+  - {version: v20220601, status: Deprecated}
+  - {version: v20210901, status: Deprecated}

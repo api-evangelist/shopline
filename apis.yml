@@ -1,7 +1,16 @@
 aid: shopline
-name: Shopline
-description: Shopline is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: SHOPLINE
+description: >-
+  SHOPLINE is an all-in-one commerce platform that lets merchants sell across
+  online stores, social channels, and offline point-of-sale, serving businesses
+  from budding entrepreneurs to global brands across Australia, China, Hong Kong,
+  Japan, Malaysia, Singapore, Taiwan, the United Kingdom, and the United States.
+  The SHOPLINE Open Platform gives developers a versioned Admin REST API, an
+  Admin GraphQL API, and a Storefront API for building apps, themes, and
+  integrations. Apps authenticate with OAuth 2.0 (Custom and Public apps) or
+  private-app tokens, request granular read_*/write_* access scopes, receive
+  HMAC-signed webhooks, and are built with the SHOPLINE CLI against free
+  development stores.
 url: https://raw.githubusercontent.com/api-evangelist/shopline/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +18,58 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://s2cdn.myshopline.com/slfs/op-new/170236799353875/SEO_banner.png
 tags:
 - Company
-apis: []
+- E-Commerce
+- Commerce
+- Retail
+- Point of Sale
+- Storefront
+- Payments
+- Webhooks
+- GraphQL
+- Developer Platform
+- Apps
+apis:
+- name: SHOPLINE Admin REST API
+  description: >-
+    Versioned REST access to store data (products, orders, customers, inventory,
+    fulfillment, discounts, and more) for SHOPLINE apps.
+  humanURL: https://developer.shopline.com/docs/apps/api-instructions-for-use/rest-admin-api/overview
+  baseURL: https://developer.shopline.com/docs/apps/api-instructions-for-use/rest-admin-api/overview
+  properties:
+  - type: APIReference
+    url: https://developer.shopline.com/docs/apps/api-instructions-for-use/rest-admin-api/overview
+- name: SHOPLINE Admin GraphQL API
+  description: GraphQL access to SHOPLINE store data, with schema documentation and an explorer.
+  humanURL: https://developer.shopline.com/docs/admin-graph-ql-api/schema-documentation
+  baseURL: https://developer.shopline.com/docs/admin-graph-ql-api/schema-documentation
+  properties:
+  - type: APIReference
+    url: https://developer.shopline.com/docs/admin-graph-ql-api/schema-documentation
+- name: SHOPLINE Storefront API
+  description: GraphQL storefront API for building custom storefront experiences.
+  humanURL: https://developer.shopline.com/docs/storefront-api/schema-documentation
+  baseURL: https://developer.shopline.com/docs/storefront-api/schema-documentation
+  properties:
+  - type: APIReference
+    url: https://developer.shopline.com/docs/storefront-api/schema-documentation
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +78,62 @@ maintainers:
 common:
 - type: Website
   url: https://shoplineapp.com
+- type: DeveloperPortal
+  url: https://developer.shopline.com
+- type: Documentation
+  url: https://developer.shopline.com/docs
+- type: APIReference
+  url: https://developer.shopline.com/docs/apps/api-instructions-for-use/rest-admin-api/overview
+- type: GettingStarted
+  url: https://developer.shopline.com/docs/apps/overview
+- type: Blog
+  url: https://developer.shopline.com/blog
+- type: Support
+  url: mailto:openapi_v2@shopline.com
+- type: GitHubOrganization
+  url: https://github.com/shoplineapp
+- type: StatusPage
+  url: https://status.shopline.com
+- type: Deprecation
+  url: https://developer.shopline.com/docs/apps/api-instructions-for-use/api-versioning-guide
+- type: Pricing
+  url: https://www.shopline.com/pricing
+- type: SignUp
+  url: https://developer.shopline.com
+- type: TermsOfService
+  url: https://developer.shopline.com/docs/apps/get-started/shopline-developer-services-agreement
+- type: PrivacyPolicy
+  url: https://www.shopline.com/privacy
+- type: Authentication
+  url: authentication/shopline-authentication.yml
+- type: OAuthScopes
+  url: scopes/shopline-scopes.yml
+- type: Conventions
+  url: conventions/shopline-conventions.yml
+- type: Lifecycle
+  url: lifecycle/shopline-lifecycle.yml
+- type: ChangeLog
+  url: changelog/shopline-changelog.yml
+- type: Conformance
+  url: conformance/shopline-conformance.yml
+- type: Webhooks
+  url: asyncapi/shopline-webhooks.yml
+- type: Packages
+  url: packages/shopline-packages.yml
+- type: SDKs
+  url: packages/shopline-packages.yml
+- type: CLI
+  url: cli/shopline-cli.yml
+- type: Sandbox
+  url: sandbox/shopline-sandbox.yml
+- type: Components
+  url: components/shopline-components.yml
+- type: LLMsTxt
+  url: llms/shopline-llms.txt
+- type: DomainSecurity
+  url: security/shopline-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 13
+  pass: local-v1

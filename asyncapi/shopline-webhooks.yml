@@ -1,0 +1,43 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.shopline.com/docs/apps/api-instructions-for-use/webhooks/overview
+type: Webhooks
+spec_type: WebhookCatalog
+docs:
+  - https://developer.shopline.com/docs/apps/api-instructions-for-use/webhooks/overview
+  - https://developer.shopline.com/docs/webhook/product/product-created
+summary: >-
+  SHOPLINE delivers store events to app-registered endpoints as HTTP POST
+  webhooks. Apps subscribe to versioned topics in the Developer Center; SHOPLINE
+  POSTs a JSON body to the configured event URL when the event fires. No
+  AsyncAPI document is published, so this captures the webhook surface directly.
+delivery:
+  transport: HTTP POST
+  content_type: "application/json; charset=utf-8"
+  target: app-configured event URL
+  versioned: true
+subscription:
+  where: SHOPLINE Developer Center ("Subscribe to a Webhook")
+  prerequisites:
+    - Store has installed the app
+    - App has subscribed to a specific version of an event
+signature:
+  algorithm: HMAC-SHA256
+  header: X-Shopline-Hmac-Sha256
+  verification: Required. Recompute the HMAC over the raw body and compare to confirm authenticity and integrity.
+request_headers:
+  - {name: X-Shopline-Topic, desc: "Event identifier, e.g. orders/edited"}
+  - {name: X-Shopline-Hmac-Sha256, desc: "HMAC-SHA256 signature of the request body"}
+  - {name: X-Shopline-Shop-Domain, desc: "Store domain, e.g. example.myshopline.com"}
+  - {name: X-Shopline-Shop-Id, desc: "Store ID"}
+  - {name: X-Shopline-Merchant-Id, desc: "Merchant ID"}
+  - {name: X-Shopline-API-Version, desc: "API version, e.g. v20250601"}
+  - {name: X-Shopline-Webhook-Id, desc: "Unique ID of this webhook event"}
+topic_format: "{group}/{action} (e.g. products/create, orders/edited)"
+topics_confirmed:
+  - {group: products, topic: products/create, description: Occurs whenever a product is created}
+topics_note: >-
+  SHOPLINE documents a broad topic catalog (product, order, customer and other
+  store entity groups) at /docs/webhook/. Only products/create was captured
+  verbatim in this pass; the full enumerated list lives in the docs and is not
+  reproduced here to avoid fabrication.

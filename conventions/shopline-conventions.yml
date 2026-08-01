@@ -1,0 +1,62 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.shopline.com/docs/apps/api-instructions-for-use/rest-admin-api/overview
+docs:
+  - https://developer.shopline.com/docs/apps/api-instructions-for-use/rest-admin-api/overview
+  - https://developer.shopline.com/docs/apps/api-instructions-for-use/api-versioning-guide
+  - https://developer.shopline.com/docs/apps/api-instructions-for-use/webhooks/overview
+  - https://developer.shopline.com/docs/apps/api-instructions-for-use/bulk-operations/bulk-query-task
+summary: >-
+  Cross-cutting request/response semantics for the SHOPLINE Open Platform Admin
+  APIs, captured from the developer documentation. SHOPLINE ships a REST Admin
+  API, an Admin GraphQL API, a Storefront (GraphQL) API, plus an unversioned
+  Ajax API and Handlebars theme templating.
+authentication:
+  style: OAuth 2.0 access token (Bearer JWT) or Private-app token
+  header: "Authorization: Bearer <accessToken>"
+  see: authentication/shopline-authentication.yml
+base_url:
+  admin_rest: "https://{handle}.myshopline.com/admin/openapi/{version}/{endpoint}.json"
+  storefront_graphql: "https://{handle}.myshopline.com/storefront/graph/{version}/graphql.json"
+  handle_note: >-
+    handle is the store subdomain prefix, e.g. for open001.myshopline.com the
+    handle is open001.
+versioning:
+  scheme: date-based path segment (vYYYYMMDD)
+  in: URL path
+  cadence: new version approximately every 3 months
+  version_types: [Unstable, Release Candidate, Stable, Deprecated]
+  stability: Stable versions are supported for 12 months, with a 9-month overlap between consecutive versions
+  versioned_apis: [Admin REST API, Admin GraphQL API, Storefront API, Webhook]
+  unversioned_apis: [Ajax API, Handlebars]
+  see: lifecycle/shopline-lifecycle.yml
+content_type: "application/json; charset=utf-8"
+request_response:
+  success_envelope: Response returned on request success (Response(Request succeeded))
+  error_envelope: Structured failure body returned on request failure (Response(Request failed))
+  note: >-
+    Exact success/error envelope field names are documented per endpoint in the
+    reference; no downloadable OpenAPI was published to enumerate them here.
+idempotency:
+  documented: false
+  note: No idempotency-key header was documented in the captured reference pages; not asserted.
+rate_limiting:
+  model: rate control limits (throttling)
+  conditions: >-
+    Requests are limited when the shop is frozen/closed/plan expired, or when
+    request frequency exceeds SHOPLINE's rate control limits.
+  see: rate-limits/
+bulk_operations:
+  interface: Bulk Query Task (asynchronous, GraphQL-backed)
+  result_format: JSONL file link in the HTTP response, valid for 12 hours
+  concurrency: serialized per store (one ongoing bulk query task per store)
+  max_records: 10000
+  required_scopes: [read_bulkoperation, write_bulkoperation]
+webhooks:
+  transport: HTTP POST to the app's configured event URL
+  signature: HMAC-SHA256 over the body, delivered in X-Shopline-Hmac-Sha256 (must be verified)
+  topic_header: X-Shopline-Topic (e.g. products/create, orders/edited)
+  context_headers: [X-Shopline-Shop-Domain, X-Shopline-Shop-Id, X-Shopline-Merchant-Id, X-Shopline-API-Version, X-Shopline-Webhook-Id]
+  see: asyncapi/shopline-webhooks.yml
+errors:
+  see: none captured (no enumerated error-code registry published in the captured pages)

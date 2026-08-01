@@ -1,0 +1,78 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.shopline.com/docs/apps/api-instructions-for-use/access-scope
+docs: https://developer.shopline.com/docs/apps/api-instructions-for-use/access-scope
+schemes:
+  - name: OAuth2
+    flows:
+      - flow: authorizationCode
+        note: >-
+          Custom and Public apps request access scopes at install time; the
+          issued accessToken carries the granted scopes. Scopes follow a
+          read_<resource> / write_<resource> naming convention (a write scope
+          generally implies its corresponding read access).
+model: read_<resource> / write_<resource>
+scopes:
+  - {scope: read_products, description: Read products}
+  - {scope: write_products, description: Read and write products}
+  - {scope: read_product_listings, description: Read product listings}
+  - {scope: write_product_listings, description: Read and write product listings}
+  - {scope: read_product_variant_images, description: Read product variant images}
+  - {scope: write_product_variant_images, description: Read and write product variant images}
+  - {scope: read_product_sizechart, description: Read product size charts}
+  - {scope: write_product_sizechart, description: Read and write product size charts}
+  - {scope: read_inventory, description: Read inventory}
+  - {scope: write_inventory, description: Read and write inventory}
+  - {scope: read_location, description: Read locations}
+  - {scope: read_orders, description: Read orders}
+  - {scope: write_orders, description: Read and write orders}
+  - {scope: read_draft_orders, description: Read draft orders}
+  - {scope: write_draft_orders, description: Read and write draft orders}
+  - {scope: write_checkouts, description: Read and write checkouts}
+  - {scope: read_returns, description: Read returns}
+  - {scope: write_return, description: Read and write returns}
+  - {scope: read_customers, description: Read customers}
+  - {scope: write_customers, description: Read and write customers}
+  - {scope: read_discounts, description: Read discounts}
+  - {scope: write_discounts, description: Read and write discounts}
+  - {scope: read_price_rules, description: Read price rules}
+  - {scope: write_price_rules, description: Read and write price rules}
+  - {scope: read_gift_card, description: Read gift cards}
+  - {scope: read_payment, description: Read payments}
+  - {scope: write_payment_gateways, description: Read and write payment gateways}
+  - {scope: read_subscription_contracts, description: Read subscription contracts}
+  - {scope: write_subscription_contracts, description: Read and write subscription contracts}
+  - {scope: read_selling_plan_group, description: Read selling plan groups}
+  - {scope: write_selling_plan_group, description: Read and write selling plan groups}
+  - {scope: read_assigned_fulfillment_orders, description: Read assigned fulfillment orders}
+  - {scope: write_assigned_fulfillment_orders, description: Read and write assigned fulfillment orders}
+  - {scope: read_fulfillment_service, description: Read fulfillment services}
+  - {scope: write_fulfillment_service, description: Read and write fulfillment services}
+  - {scope: read_shipping, description: Read shipping}
+  - {scope: write_shipping, description: Read and write shipping}
+  - {scope: read_markets, description: Read markets}
+  - {scope: write_markets, description: Read and write markets}
+  - {scope: read_marketing_event, description: Read marketing events}
+  - {scope: write_marketing_event, description: Read and write marketing events}
+  - {scope: read_content, description: Read content}
+  - {scope: write_content, description: Read and write content}
+  - {scope: read_page, description: Read pages}
+  - {scope: write_page, description: Read and write pages}
+  - {scope: read_themes, description: Read themes}
+  - {scope: write_themes, description: Read and write themes}
+  - {scope: read_translation, description: Read translations}
+  - {scope: write_translation, description: Read and write translations}
+  - {scope: write_files, description: Read and write files}
+  - {scope: read_publications, description: Read publications}
+  - {scope: write_publications, description: Read and write publications}
+  - {scope: read_script_tags, description: Read script tags}
+  - {scope: write_script_tags, description: Read and write script tags}
+  - {scope: read_store_information, description: Read store information}
+  - {scope: write_store_information, description: Read and write store information}
+  - {scope: read_shop_policy, description: Read shop policies}
+  - {scope: write_shop_policy, description: Read and write shop policies}
+  - {scope: read_store_staff, description: Read store staff}
+  - {scope: read_store_log, description: Read store logs}
+  - {scope: read_store_metrics, description: Read store metrics}
+  - {scope: read_bulkoperation, description: Read bulk operation tasks}
+  - {scope: write_bulkoperation, description: Read and write bulk operation tasks}

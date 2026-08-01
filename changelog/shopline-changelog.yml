@@ -1,0 +1,20 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.shopline.com/docs/apps/api-instructions-for-use/api-versioning-guide
+scheme: date-based API versions (vYYYYMMDD), released roughly quarterly
+current_stable: v20260601
+docs: https://developer.shopline.com/docs/apps/api-instructions-for-use/api-versioning-guide
+note: >-
+  SHOPLINE publishes changes as dated OpenAPI versions rather than a single dated
+  changelog feed; each version is announced via the Developer Center. Entries
+  below are the live version train (status as observed 2026-07-21). Per-version
+  release notes live in the versioned reference under each API.
+entries:
+  - {version: v20261201, date: '2026-12-01', status: Unstable, type: preview}
+  - {version: v20260901, date: '2026-09-01', status: Release Candidate, type: preview}
+  - {version: v20260601, date: '2026-06-01', status: Stable, type: stable}
+  - {version: v20260301, date: '2026-03-01', status: Stable, type: stable}
+  - {version: v20251201, date: '2025-12-01', status: Stable, type: stable}
+  - {version: v20250601, date: '2025-06-01', status: Stable, type: stable}
+  - {version: v20250301, date: '2025-03-01', status: Stable, type: stable}
+  - {version: v20241201, date: '2024-12-01', status: Deprecated, type: deprecated}

@@ -1,0 +1,28 @@
+generated: '2026-07-21'
+method: derived
+source: SHOPLINE developer documentation (developer.shopline.com/docs)
+standards:
+  - id: oauth2
+    conforms: true
+    evidence: Custom and Public apps use OAuth 2.0 authorization-code; accessToken carries granted scopes
+  - id: oauth2-scopes
+    conforms: true
+    evidence: Documented read_*/write_* access-scope reference (62 scopes)
+  - id: graphql
+    conforms: true
+    evidence: Admin GraphQL API and Storefront GraphQL API published with schema documentation
+  - id: webhooks-hmac
+    conforms: true
+    evidence: Webhooks signed with HMAC-SHA256 in X-Shopline-Hmac-Sha256; verification required
+  - id: gdpr
+    conforms: partial
+    evidence: Public apps must provide a valid GDPR endpoint per SHOPLINE service requirements (not a published certification)
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: No application/problem+json error format documented in captured pages
+  - id: oidc
+    conforms: false
+    evidence: No OpenID Connect discovery/endpoints published (well-known/openid-configuration returns the docs SPA shell)
+  - id: rest
+    conforms: true
+    evidence: Versioned REST Admin API at /admin/openapi/{version}/{endpoint}.json

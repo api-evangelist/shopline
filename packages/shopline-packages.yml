@@ -1,0 +1,38 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.npmjs.com/org/shoplinedev
+note: >-
+  First-party developer tooling published under the @shoplinedev npm scope.
+  These are the app-development toolchain (scaffolder + CLI + app runtime),
+  which SHOPLINE documents as the supported way to build apps. No general-purpose
+  server-side API client SDK (e.g. a REST/GraphQL client library) was found in
+  the public registries in this pass.
+packages:
+  - language: javascript
+    registry: npm
+    name: "@shoplinedev/cli"
+    url: https://www.npmjs.com/package/@shoplinedev/cli
+    install: npm install -g @shoplinedev/cli
+    version_latest: 1.9.20
+    version_next: 2.1.5
+    description: CLI tool to build for the SHOPLINE platform
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@shoplinedev/create-app"
+    url: https://www.npmjs.com/package/@shoplinedev/create-app
+    install: npm create @shoplinedev/app@next
+    version_latest: 2.1.0
+    description: Scaffold a new SHOPLINE application
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@shoplinedev/app"
+    url: https://www.npmjs.com/package/@shoplinedev/app
+    install: npm install @shoplinedev/app
+    version_latest: 2.1.0
+    description: SHOPLINE app runtime / framework package
+    official: true
+source_code:
+  github_org: https://github.com/shoplineapp
+  github_dev_org: https://github.com/shoplinedev

@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.shopline.com/docs/apps/development-tool/shopline-cli/build-apps-using-shopline-cli
+name: SHOPLINE CLI
+version_line: SHOPLINE CLI 2.0
+docs: https://developer.shopline.com/docs/apps/development-tool/shopline-cli/build-apps-using-shopline-cli
+description: >-
+  Command-line tool for SHOPLINE developers that streamlines project
+  initialization, local development, and deployment. Handles local app
+  configuration, development-store association, local project preview, and app
+  debugging.
+requirements:
+  node: ">=18.0"
+  package_managers: [npm, yarn, pnpm]
+  tools: [Git, Chrome (recommended)]
+  prerequisites: [Partner account, Development store]
+install:
+  scaffold: npm create @shoplinedev/app@next
+  note: >-
+    Prompts for a project name (e.g. "Shopline App" becomes shopline-app) and
+    downloads project dependencies. yarn and pnpm equivalents are supported.
+flags:
+  - {flag: "dev --skip-dependencies-installation", purpose: skip dependency download during init (install manually later)}
+capabilities:
+  - Initialize / scaffold an app project
+  - Local app configuration
+  - Associate a development store
+  - Local project preview
+  - App debugging
+  - Deployment workflow
+binary_package: see packages/shopline-packages.yml

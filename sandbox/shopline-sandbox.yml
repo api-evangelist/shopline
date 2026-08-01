@@ -1,0 +1,28 @@
+generated: '2026-07-21'
+method: searched
+source: https://developer.shopline.com/docs/apps/development-tool/development-stores/overview
+docs: https://developer.shopline.com/docs/apps/development-tool/development-stores/overview
+model: development stores
+summary: >-
+  SHOPLINE's test environment is the "development store" - a free store on the
+  SHOPLINE premium plan used to build and test apps and themes. There is no
+  separate test/live API key prefix; testing is done against a real (free)
+  development store. Developers can create an unlimited number of development
+  stores.
+development_stores:
+  cost: free (built on the SHOPLINE premium plan)
+  quantity: unlimited
+  default_test_data: optional (choose whether to populate with default test data)
+  categories:
+    - name: For testing
+      purpose: Develop and test your apps or themes
+      transferable: false
+    - name: Tailored for specific merchants
+      purpose: Pre-configure and test a store before transferring it to a merchant (earns commission on transfer)
+      transferable: true
+  capabilities:
+    - Create an unlimited number of orders for free testing
+    - Access most features of the SHOPLINE premium plan
+  limitations:
+    - Plan cannot be changed while it is a development store (merchant can change plan after transfer)
+association: The SHOPLINE CLI associates a development store for local app development and preview
