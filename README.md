@@ -1,4 +1,4 @@
-# Shopline
+# SHOPLINE
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,6 +64,110 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Shopline is a company surfaced as a portfolio company of 500-global and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+SHOPLINE is an all-in-one commerce platform that lets merchants sell across online stores, social channels, and offline point-of-sale, serving businesses from budding entrepreneurs to global brands across Australia, China, Hong Kong, Japan, Malaysia, Singapore, Taiwan, the United Kingdom, and the United States. The SHOPLINE Open Platform gives developers a versioned Admin REST API, an Admin GraphQL API, and a Storefront API for building apps, themes, and integrations. Apps authenticate with OAuth 2.0 (Custom and Public apps) or private-app tokens, request granular read_*/write_* access scopes, receive HMAC-signed webhooks, and are built with the SHOPLINE CLI against free development stores.
 
-Backed by: 500-global — https://shoplineapp.com
+**Areas:** Company · E-Commerce · Commerce · Retail · Point-of-Sale · Storefront · Payments · Webhook · GraphQL · Developer Platform · Application
+
+## SHOPLINE on APIs.io
+
+Everything profiled for SHOPLINE is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/shopline/](https://apis.io/providers/shopline/)** — or go straight to one of the APIs or properties below.
+
+### APIs (3)
+
+- [SHOPLINE Admin REST API](https://apis.io/apis/shopline/shopline-admin-rest-api/) — Versioned REST access to store data (products, orders, customers, inventory, fulfillment, discounts, and more) for SHOPLINE apps.
+- [SHOPLINE Admin GraphQL API](https://apis.io/apis/shopline/shopline-admin-graphql-api/) — GraphQL access to SHOPLINE store data, with schema documentation and an explorer.
+- [SHOPLINE Storefront API](https://apis.io/apis/shopline/shopline-storefront-api/) — GraphQL storefront API for building custom storefront experiences.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Shopline Webhooks](https://apis.io/asyncapis/shopline/shopline-webhooks/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Shopline Authentication](https://apis.io/security/shopline/shopline-authentication/)
+- [Shopline Domain Security](https://apis.io/security/shopline/shopline-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Shopline Scopes](https://apis.io/scopes/shopline/shopline-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://shoplineapp.com)
+- [Documentation](https://developer.shopline.com/docs)
+- [Getting started](https://developer.shopline.com/docs/apps/overview)
+- [API reference](https://developer.shopline.com/docs/apps/api-instructions-for-use/rest-admin-api/overview)
+- [Pricing](https://www.shopline.com/pricing)
+- [Sign up](https://developer.shopline.com)
+- [Blog](https://developer.shopline.com/blog)
+- [Terms of service](https://developer.shopline.com/docs/apps/get-started/shopline-developer-services-agreement)
+- [Privacy policy](https://www.shopline.com/privacy)
+- [GitHub](https://github.com/shoplineapp)
+- [Status](https://status.shopline.com)
+
+## API Evangelist rating
+
+**Kin Score 50.6** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 78.6 |
+| Contract quality | 39.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 50.0 |
+| Developer ergonomics | 76.2 |
+| Access clarity | 44.7 |
+
+**Agent readiness 19.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 31.3** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/shopline/](https://apis.io/providers/shopline/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for SHOPLINE: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/shopline/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
